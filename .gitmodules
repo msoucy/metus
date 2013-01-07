@@ -1,0 +1,6 @@
+[submodule "metus/dncurses"]
+	path = metus/dncurses
+	url = git@github.com:msoucy/dncurses.git
+[submodule "metus/dzmq"]
+	path = metus/dzmq
+	url = git@github.com:msoucy/dzmq.git
