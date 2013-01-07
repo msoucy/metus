@@ -1,0 +1,4 @@
+Metus is a set of high-level bindings for several C libraries in D.
+Each one is designed to take advantage of D’s features, converting basic library constructs into Ranges that can be used with the Phobos standard library and utilizing some metaprogramming constructs to provide a clean, yet usable and functional, API.
+
+The Metus repository provides a simple way to pull and update all of the components of Metus at once.

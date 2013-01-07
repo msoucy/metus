@@ -27,6 +27,9 @@ $(COBJDIR)/%: $(SRC_PREFIX)/%.cpp
 
 testing: clean progs
 
+testing32: clean
+	${MAKE} D_FLAGS="${D_FLAGS} -m32" testing
+
 progs: dprogs cprogs
 
 dprogs: $(patsubst $(SRC_PREFIX)/%,$(DOBJDIR)/%,$(patsubst %.d,%,$(wildcard $(SRC_PREFIX)/*.d)))
