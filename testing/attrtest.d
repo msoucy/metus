@@ -39,11 +39,11 @@ void main() {
 	colortest();
 	stdwin.put(attrclear);
 	stdwin.getch();
-	stdwin.bkgd('-', bg(Color.RED));
-	stdwin.bkgd('&', bg(Color.GREEN));
-	stdwin.clear();
-	stdwin.put(Pos(14,5), "Hello, world!");
-	//stdwin.put(stdwin.max, '-');
+	if(0) {
+		stdwin.bkgd('-', bg(Color.RED));
+		stdwin.clear();
+		stdwin.put(Pos(14,5), "Hello, world!");
+	}
 
 	stdwin.getch();
 }
