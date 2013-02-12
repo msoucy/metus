@@ -117,7 +117,7 @@ void main() {
 	int row = stdwin.max.y/2;
 	int col = stdwin.max.x/2;
 	bool play = false;
-	Cellular game = new Cellular(stdwin.max.y+1, stdwin.max.x+1, "B36/S23");
+	Cellular game = new Cellular(stdwin.max.y+1, stdwin.max.x+1);
 
 	mainLoop:
 	while(1) {
