@@ -1,4 +1,4 @@
-#!/usr/bin/dmd -run
+#!/usr/bin/rdmd
 
 import metus.dncurses.dncurses;
 
@@ -15,6 +15,7 @@ void main() {
 	initscr();
 	scope(exit) endwin();
 	initColor();
+	mode=Raw();
 
 	stdwin.put(
 		Pos(4,5), "Hello, world!",
@@ -43,7 +44,7 @@ void main() {
 		stdwin.bkgd('-', bg(Color.RED));
 		stdwin.clear();
 		stdwin.put(Pos(14,5), "Hello, world!");
+		stdwin.getch();
 	}
 
-	stdwin.getch();
 }

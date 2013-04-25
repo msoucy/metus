@@ -1,4 +1,4 @@
-#!/usr/bin/dmd -run
+#!/usr/bin/rdmd
 
 module mtest;
 

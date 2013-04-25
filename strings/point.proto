@@ -1,0 +1,38 @@
+package point;
+
+
+enum Foo {
+	a=1;
+	b=5;
+	c=15;
+}
+
+message Bar {
+	required Foo foo = 1;
+}
+
+message Point {
+	optional int32 x = 1 [default=166];
+	required int32 y = 2;
+	optional string label = 3;
+	message Coord {
+		required int32 a = 1;
+		required int32 b = 2;
+	}
+}
+
+message Test1 {
+	required int32 a = 1;
+}
+
+message Test2 {
+  required string b = 2;
+}
+
+message Test3 {
+	required Test1 c = 3;
+}
+
+message Test4 {
+	repeated int32 d = 4 [packed=true];
+}

@@ -1,4 +1,4 @@
-#!/usr/bin/dmd -run
+#!/usr/bin/rdmd
 
 import std.string;
 import metus.dncurses.dncurses;

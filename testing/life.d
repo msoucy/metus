@@ -1,4 +1,4 @@
-#!/usr/bin/dmd -run
+#!/usr/bin/rdmd
 
 module life;
 
@@ -84,7 +84,7 @@ public:
 			try {
 				stdwin.put(b?'#':' ');
 			} catch(NCursesException e) {
-				// Couldn't place the character, but this always happens at the 
+				// Couldn't place the character, but this always happens at the
 			}
 		}
 	}
